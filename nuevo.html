@@ -1,0 +1,36 @@
+<html> 
+
+    <head> 
+        <style> 
+            div { 
+                font-weight:bold; 
+                color: black; 
+                font-size: 30px;
+            }
+        </style> 
+        <script> 
+            function myClickFunction(){ 
+                var elementName = document.getElementById("click-demo"); 
+                //comprueba si el estilo del elemento está en cursiva 
+                //establece el estilo en cursiva si no lo es 
+                if (elementName.style.fontStyle != "italic"){ 
+                    elementName.style.fontStyle = "italic"; 
+                } 
+                //si el estilo está en cursiva, cámbielo a normal 
+                else{ 
+                    elementName.style.fontStyle = "normal"; 
+                }     
+            }       
+        </script> 
+    </head> 
+    <body>     
+        <div id="click-demo" onclick="myClickFunction()"> 
+            El atributo de evento onclick reacciona cuando un usuario hace clic. Puede cambiar el 
+            color de fondo del cuadro, cambiar la fuente del texto, contar cuántas veces 
+            hace clic el usuario y más. Haga clic aquí en este cuadro para ver qué puede hacer 
+            con el atributo onclick y un poco de JavaScript. Cuando combinas 
+            JavaScript con HTML y CSS, ¡puedes hacer que tus páginas web cobren vida! 
+        </div> 
+    </body> 
+
+</html>
